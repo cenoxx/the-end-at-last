@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The official website of the Dayton, Ohio based Metalcore band, The End At Last.">
+<meta property="og:title" content="The End At Last"/>
+<title>The End At Last - Official Site</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Styles/styles.css?v=2">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" type="image/svg+xml" href="Resources/TEALsolid.svg">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+    <div class="container-fluid px-lg-4">
+        <a class="navbar-brand" href="#home">
+            <img src="Resources/TEALsolid.svg" class="nav-logo" alt="TEAL Logo" width="160" height="50">
+        </a>
+
+        <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav gap-lg-3">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#shows">Shows</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="home" class="hero-section">
+    <div class="container hero-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <img class="img-fluid hero-image mb-4"
+                     src="Resources/TEAL EP Cover JPG.jpg"
+                     alt="The End At Last EP cover">
+
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="#music" class="btn btn-band btn-lg rounded-0">Listen now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="music" class="content-section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-lg-8">
+                <h2 class="section-title display-5 fw-bold">Music</h2>
+                <p class="section-intro">Check out our latest tracks below.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <ul class="nav nav-pills justify-content-center mb-4 music-tabs">
+                    <li class="nav-item">
+                        <button class="nav-link active rounded-0"
+                                data-bs-toggle="pill"
+                                data-bs-target="#spotify"
+                                type="button">
+                            Spotify
+                        </button>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button class="nav-link rounded-0"
+                                data-bs-toggle="pill"
+                                data-bs-target="#apple"
+                                type="button">
+                            Apple Music
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="spotify">
+                        <div class="d-flex justify-content-center">
+                            <iframe
+                                class="music-frame"
+                                src="https://open.spotify.com/embed/artist/33baafCCgpXDrPa4BSEaYN?si=QGsPU-OTSwux8ho89uVsyg"
+                                allow="encrypted-media">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="apple">
+                        <div class="d-flex justify-content-center">
+                            <iframe
+                                class="apple-frame"
+                                src="https://embed.music.apple.com/us/artist/the-end-at-last/1651494015"
+                                allow="autoplay; encrypted-media;">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="content-section section-dark">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-lg-8">
+                <h2 class="section-title display-5 fw-bold">Videos</h2>
+                <p class="section-intro">Watch our latest release.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="ratio ratio-16x9 video-shell">
+                    <iframe
+                        src="https://www.youtube.com/embed/fzWVRzTn-5E"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="content-section about-section">
+    <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-7">
+                <div id="aboutCarousel" class="carousel slide about-carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Resources/BandPic.jpg" class="d-block w-100 about-main-image" alt="Band photo 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/CrowdShot1.JPG" class="d-block w-100 about-main-image" alt="Band photo 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/ParkerSolo.JPG" class="d-block w-100 about-main-image" alt="Band photo 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-5 text-start">
+                <p class="lead mb-3">
+                    The End At Last is a metalcore band originating from Dayton, Ohio.
+                </p>
+                <p>
+                    Built around heavy rhythms, aggressive energy, and emotionally driven songwriting, we blend crushing riffs with a modern, hard-hitting sound.
+                </p>
+                <p>
+                    The End At Last is Parker Buhrman (Vocals/Guitar), Alex Watson (Guitar), Nate VanBuskirk (Bass), and Christian Enochs (Drums).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shows" class="content-section shows-section">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h1 class="section-title display-4 fw-bold">Shows</h1>
+                <p class="lead mb-4">No shows currently planned.</p>
+                <!-- <div class="show-card">
+                    <h3>June 21, 2026</h3>
+                    <p>Dirty Dungarees — Columbus, OH</p>
+                    <p>With Steely Dan and TALL HAT</p>
+                </div> -->
+                <p class="mb-4">
+                    Want to book The End At Last for a show or event? Reach out below.
+                </p>
+                <a class="btn btn-band btn-lg rounded-0" href="mailto:theendatlastOH@gmail.com">
+                    Contact for Booking
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="content-section contact-section">
+    <div class="container contact-content">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="section-title display-5 fw-bold">Contact</h2>
+                <div class="mb-4">
+                    <a class="social-link social-icon" href="mailto:theendatlastOH@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="mb-3">Our socials:</p>
+                <div class="d-flex justify-content-center gap-4 social-icons">
+                    <a class="social-link social-icon" href="https://instagram.com/theendatlast" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="social-link social-icon" href="https://twitter.com/theendatlastoh" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="social-link social-icon" href="https://www.facebook.com/p/The-End-At-Last-61562725483990/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav')
+
+    if (window.scrollY > 100) {
+        nav.classList.add('visible')
+    } else {
+        nav.classList.remove('visible')
+    }
+})
+</script>
+
+</body>
+</html>

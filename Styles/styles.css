@@ -1,0 +1,313 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Jomolhari', serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+}
+
+.section-fh{
+    min-height: 100vh;
+}
+
+
+
+/* Navbar */
+
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.custom-navbar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 0.08em;
+}
+
+.nav-link:hover {
+    color: #ff0000 !important;
+}
+
+.nav-logo {
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+
+/* Hero */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: url('../Resources/bgimage.png') no-repeat center center / cover;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero-content .btn {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* Shared sections */
+
+.content-section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.section-dark {
+    background: #111;
+}
+
+.section-title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 0.08em;
+}
+
+.section-intro {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+
+/* Buttons */
+
+.btn-band {
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    min-width: 180px;
+    border-radius: 0.35rem;
+}
+
+.btn-band:hover,
+.btn-band:focus {
+    background: #cc0000;
+    color: #fff;
+}
+
+.music-tabs .nav-link {
+    color: #fff !important;
+}
+
+
+/* Video */
+
+.video-shell {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #000;
+}
+
+
+/* Music */
+
+.music-frame {
+    width: 100%;
+    max-width: 600px;
+    height: 380px;
+    border: 0;
+}
+
+.apple-frame {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.music-tabs .nav-link {
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.music-tabs .nav-link.active[data-bs-target="#spotify"] {
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+.music-tabs .nav-link.active[data-bs-target="#apple"] {
+    background-color: #FA243C;
+    border-color: #FA243C;
+}
+
+.music-tabs .nav-link:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+
+/* About */
+
+.about-section {
+    text-align: left;
+    align-items: flex-start;
+    padding-top: 120px;
+}
+
+ .about-main-image {
+    width: 100%;
+    height: 500px;       
+    object-fit: cover;   
+} 
+
+
+/* Social */
+
+.social-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.about-carousel {
+    height: 500px;
+    border-radius: 12px;
+}
+
+/* Shows */
+
+.shows-section {
+    background: #111;
+}
+
+.show-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin: 0 auto 2rem;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.show-card h3 {
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1.25rem;
+}
+
+.show-card p {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.show-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact */
+
+.contact-section {
+    background: url('../Resources/BandPic.jpg') no-repeat center center / cover;
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #fff;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #ff0000;
+    transform: scale(1.15);
+}
+
+
+/* Footer */
+
+footer {
+    background: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.96);
+        margin-top: 0.75rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 4.5rem 0;
+    }
+
+    .music-frame {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-frame {
+        height: 220px;
+    }
+
+    .btn-band {
+        min-width: 150px;
+    }
+}
